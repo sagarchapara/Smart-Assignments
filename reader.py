@@ -31,27 +31,9 @@ def findAndReplaceV2(row):
     else:
         return int(names[row[closedBy]])
 
-names = {
-    'Abhay Mumbare <abmumbar@microsoft.com>' : 0,
-    'Nirav Patel <nipa@microsoft.com>': 1,
-    'Spandana Otra <spandanaotra@microsoft.com>': 2,
-    'Sagar Chapara <chaparasagar@microsoft.com>': 3,
-    'Villash . <villashlnu@microsoft.com>': 4,
-    'Vidhu Gangwar <vidhugangwar@microsoft.com>': 5,
-    'Varun Avadhani K <vavadhanik@microsoft.com>': 6,
-    'Prakhar Tripathi <pratripathi@microsoft.com>': 7,
-}
+names = {}
 
-index_names = {
-    0: 'Abhay Mumbare <abmumbar@microsoft.com>',
-    1: 'Nirav Patel <nipa@microsoft.com>',
-    2: 'Spandana Otra <spandanaotra@microsoft.com>',
-    3: 'Sagar Chapara <chaparasagar@microsoft.com>',
-    4: 'Villash . <villashlnu@microsoft.com>',
-    5: 'Vidhu Gangwar <vidhugangwar@microsoft.com>',
-    6: 'Varun Avadhani K <vavadhanik@microsoft.com>',
-    7: 'Prakhar Tripathi <pratripathi@microsoft.com>',
-}
+index_names = {}
 
 def ReadData():
     df = pandas.read_csv('Smart Assignments query.csv')
